@@ -3,19 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		88EF2CB01943281C9E8BD6C0 /* Pods_DonCarlos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 493CCE85D8DE7C59DD5E0BC5 /* Pods_DonCarlos.framework */; };
 		AF98C15824A4686E005542C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF98C15724A4686E005542C1 /* AppDelegate.swift */; };
 		AF98C15A24A4686E005542C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF98C15924A4686E005542C1 /* SceneDelegate.swift */; };
 		AF98C15C24A4686E005542C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF98C15B24A4686E005542C1 /* ViewController.swift */; };
 		AF98C15F24A4686E005542C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF98C15D24A4686E005542C1 /* Main.storyboard */; };
 		AF98C16124A46872005542C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF98C16024A46872005542C1 /* Assets.xcassets */; };
 		AF98C16424A46872005542C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF98C16224A46872005542C1 /* LaunchScreen.storyboard */; };
+		AF98C16C24A47451005542C1 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF98C16B24A47451005542C1 /* EntryViewController.swift */; };
+		AF98C16E24A47471005542C1 /* ViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF98C16D24A47471005542C1 /* ViewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		493CCE85D8DE7C59DD5E0BC5 /* Pods_DonCarlos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DonCarlos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF98C15424A4686E005542C1 /* DonCarlos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DonCarlos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF98C15724A4686E005542C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF98C15924A4686E005542C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,10 @@
 		AF98C16024A46872005542C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF98C16324A46872005542C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF98C16524A46872005542C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF98C16B24A47451005542C1 /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
+		AF98C16D24A47471005542C1 /* ViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewViewController.swift; sourceTree = "<group>"; };
+		B121C3CA5E636B16F9C24AB4 /* Pods-DonCarlos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DonCarlos.release.xcconfig"; path = "Target Support Files/Pods-DonCarlos/Pods-DonCarlos.release.xcconfig"; sourceTree = "<group>"; };
+		F1BCC4A87B0BF7751A58F3B2 /* Pods-DonCarlos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DonCarlos.debug.xcconfig"; path = "Target Support Files/Pods-DonCarlos/Pods-DonCarlos.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88EF2CB01943281C9E8BD6C0 /* Pods_DonCarlos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		014955823F6D2F36D497CE12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				493CCE85D8DE7C59DD5E0BC5 /* Pods_DonCarlos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		52933C784F10BFCE99B280A0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F1BCC4A87B0BF7751A58F3B2 /* Pods-DonCarlos.debug.xcconfig */,
+				B121C3CA5E636B16F9C24AB4 /* Pods-DonCarlos.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		AF98C14B24A4686E005542C1 = {
 			isa = PBXGroup;
 			children = (
 				AF98C15624A4686E005542C1 /* DonCarlos */,
 				AF98C15524A4686E005542C1 /* Products */,
+				52933C784F10BFCE99B280A0 /* Pods */,
+				014955823F6D2F36D497CE12 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +91,8 @@
 				AF98C16024A46872005542C1 /* Assets.xcassets */,
 				AF98C16224A46872005542C1 /* LaunchScreen.storyboard */,
 				AF98C16524A46872005542C1 /* Info.plist */,
+				AF98C16B24A47451005542C1 /* EntryViewController.swift */,
+				AF98C16D24A47471005542C1 /* ViewViewController.swift */,
 			);
 			path = DonCarlos;
 			sourceTree = "<group>";
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF98C16824A46872005542C1 /* Build configuration list for PBXNativeTarget "DonCarlos" */;
 			buildPhases = (
+				65CAE1A3B650AC343F35A4D1 /* [CP] Check Pods Manifest.lock */,
 				AF98C15024A4686E005542C1 /* Sources */,
 				AF98C15124A4686E005542C1 /* Frameworks */,
 				AF98C15224A4686E005542C1 /* Resources */,
+				1BCAB961746F5ADBBF65931C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -93,9 +125,10 @@
 		AF98C14C24A4686E005542C1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = "";
 				LastSwiftUpdateCheck = 1150;
 				LastUpgradeCheck = 1150;
-				ORGANIZATIONNAME = Pignusg;
+				ORGANIZATIONNAME = "Pignus Solutions";
 				TargetAttributes = {
 					AF98C15324A4686E005542C1 = {
 						CreatedOnToolsVersion = 11.5;
@@ -133,12 +166,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1BCAB961746F5ADBBF65931C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DonCarlos/Pods-DonCarlos-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DonCarlos/Pods-DonCarlos-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DonCarlos/Pods-DonCarlos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65CAE1A3B650AC343F35A4D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DonCarlos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AF98C15024A4686E005542C1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AF98C15C24A4686E005542C1 /* ViewController.swift in Sources */,
+				AF98C16C24A47451005542C1 /* EntryViewController.swift in Sources */,
+				AF98C16E24A47471005542C1 /* ViewViewController.swift in Sources */,
 				AF98C15824A4686E005542C1 /* AppDelegate.swift in Sources */,
 				AF98C15A24A4686E005542C1 /* SceneDelegate.swift in Sources */,
 			);
@@ -282,6 +359,7 @@
 		};
 		AF98C16924A46872005542C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1BCC4A87B0BF7751A58F3B2 /* Pods-DonCarlos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -291,7 +369,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = pignus.DonCarlos;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pignus.DonCarlos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -300,6 +378,7 @@
 		};
 		AF98C16A24A46872005542C1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B121C3CA5E636B16F9C24AB4 /* Pods-DonCarlos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -309,7 +388,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = pignus.DonCarlos;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pignus.DonCarlos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
